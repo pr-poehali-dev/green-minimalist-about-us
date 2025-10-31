@@ -52,6 +52,7 @@ const Index = () => {
             <a href="#about" className="text-gray-700 hover:text-primary transition-colors">О нас</a>
             <a href="#history" className="text-gray-700 hover:text-primary transition-colors">История</a>
             <a href="#team" className="text-gray-700 hover:text-primary transition-colors">Команда</a>
+            <a href="#cases" className="text-gray-700 hover:text-primary transition-colors">Кейсы</a>
             <a href="#clients" className="text-gray-700 hover:text-primary transition-colors">Клиенты</a>
             <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Контакты</a>
           </div>
@@ -162,7 +163,97 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-20 px-6 bg-gradient-to-b from-accent to-primary/5">
+      <section id="cases" className="py-20 px-6 bg-accent">
+        <div className="container mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-gray-900">
+            Кейсы наших проектов
+          </h2>
+          <p className="text-xl text-gray-600 text-center mb-16 max-w-2xl mx-auto">
+            Реальные истории успеха наших клиентов
+          </p>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300">
+              <div className="h-48 bg-gradient-to-br from-primary to-green-700 flex items-center justify-center">
+                <Icon name="ShoppingCart" className="text-white" size={64} />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Icon name="TrendingUp" className="text-primary" size={20} />
+                  <span className="text-primary font-semibold">Интернет-магазин</span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Рост продаж на 340%</h3>
+                <p className="text-gray-600 mb-4">
+                  Запустили полнофункциональный интернет-магазин для федеральной сети. Интеграция с 1С, CRM и доставкой.
+                </p>
+                <div className="space-y-2 text-sm text-gray-600">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Clock" size={16} className="text-primary" />
+                    <span>Срок реализации: 2 месяца</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Users" size={16} className="text-primary" />
+                    <span>15 000+ пользователей/день</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300">
+              <div className="h-48 bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center">
+                <Icon name="Briefcase" className="text-white" size={64} />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Icon name="Building2" className="text-primary" size={20} />
+                  <span className="text-primary font-semibold">Корпоративный портал</span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Автоматизация HR-процессов</h3>
+                <p className="text-gray-600 mb-4">
+                  Корпоративный портал для крупного холдинга с 500+ сотрудниками. Полная автоматизация документооборота.
+                </p>
+                <div className="space-y-2 text-sm text-gray-600">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Clock" size={16} className="text-primary" />
+                    <span>Срок реализации: 3 месяца</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="CheckCircle2" size={16} className="text-primary" />
+                    <span>Экономия 40% рабочего времени</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300">
+              <div className="h-48 bg-gradient-to-br from-green-500 to-primary flex items-center justify-center">
+                <Icon name="Smartphone" className="text-white" size={64} />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Icon name="Zap" className="text-primary" size={20} />
+                  <span className="text-primary font-semibold">Мобильное приложение</span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Рост конверсии на 280%</h3>
+                <p className="text-gray-600 mb-4">
+                  Разработка мобильного приложения для сети ресторанов. Программа лояльности и онлайн-заказы.
+                </p>
+                <div className="space-y-2 text-sm text-gray-600">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Clock" size={16} className="text-primary" />
+                    <span>Срок реализации: 4 месяца</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Download" size={16} className="text-primary" />
+                    <span>50 000+ установок</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-gray-900">
             Свяжитесь с нами
