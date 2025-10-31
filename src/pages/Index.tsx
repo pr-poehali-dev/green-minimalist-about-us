@@ -112,6 +112,78 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 px-6 bg-gradient-to-b from-white to-accent">
+        <div className="container mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-gray-900">
+            Почему выбирают нас
+          </h2>
+          <p className="text-xl text-gray-600 text-center mb-16 max-w-2xl mx-auto">
+            Мы предлагаем комплексный подход и гарантируем результат
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 duration-300">
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                <Icon name="Target" className="text-primary" size={32} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Индивидуальный подход</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Разрабатываем решения под ваши уникальные бизнес-процессы. Никаких шаблонов — только то, что нужно именно вам.
+              </p>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 duration-300">
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                <Icon name="Rocket" className="text-primary" size={32} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Быстрый запуск</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Agile-методология позволяет запускать проекты в 2 раза быстрее. Первые результаты уже через 2 недели.
+              </p>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 duration-300">
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                <Icon name="HeadphonesIcon" className="text-primary" size={32} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Поддержка 24/7</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Круглосуточная техподдержка и консультации. Ваши вопросы решаются в течение 30 минут.
+              </p>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 duration-300">
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                <Icon name="GraduationCap" className="text-primary" size={32} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Обучение команды</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Проводим подробное обучение ваших сотрудников. Видеокурсы, инструкции и личные консультации.
+              </p>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 duration-300">
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                <Icon name="LineChart" className="text-primary" size={32} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Рост бизнеса</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Наши клиенты увеличивают продажи в среднем на 250% за первый год работы с новой системой.
+              </p>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 duration-300">
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                <Icon name="ShieldCheck" className="text-primary" size={32} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Гарантия качества</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Официальная гарантия на все работы. Бесплатное устранение любых недочетов в течение года.
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section id="team" className="py-20 px-6 bg-accent">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900">
