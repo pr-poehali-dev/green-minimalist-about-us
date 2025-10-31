@@ -38,6 +38,27 @@ const Index = () => {
     { number: "24/7", label: "Поддержка клиентов" },
   ];
 
+  const testimonials = [
+    {
+      name: "Сергей Михайлов",
+      position: "Директор сети магазинов 'Техносити'",
+      text: "За 3 месяца запустили полноценный интернет-магазин. Продажи выросли на 320%. Команда профессионалов, которая понимает бизнес.",
+      rating: 5
+    },
+    {
+      name: "Анна Королева",
+      position: "CEO холдинга 'ГлобалТрейд'",
+      text: "Автоматизировали все процессы компании. Теперь всё работает как часы. Окупили инвестиции за 4 месяца!",
+      rating: 5
+    },
+    {
+      name: "Игорь Петров",
+      position: "Владелец сети ресторанов",
+      text: "Отличная работа с мобильным приложением. Конверсия выросла почти в 3 раза. Рекомендую всем!",
+      rating: 5
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-accent to-white">
       <header className="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
@@ -231,6 +252,42 @@ const Index = () => {
               <Icon name="Zap" className="text-primary" size={20} />
               <span>Быстрое внедрение</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-6 bg-white">
+        <div className="container mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-gray-900">
+            Отзывы клиентов
+          </h2>
+          <p className="text-xl text-gray-600 text-center mb-16 max-w-2xl mx-auto">
+            Более 1000 довольных клиентов по всей России
+          </p>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="p-8 hover:shadow-xl transition-all duration-300">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Icon key={i} name="Star" className="text-yellow-500 fill-yellow-500" size={20} />
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-6 italic leading-relaxed">
+                  "{testimonial.text}"
+                </p>
+                <div className="border-t pt-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                      <Icon name="User" className="text-primary" size={24} />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
+                      <p className="text-sm text-gray-600">{testimonial.position}</p>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
